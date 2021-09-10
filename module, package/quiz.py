@@ -57,17 +57,21 @@ if birthday2 < now2:
 
 last_number = input("마지막 번호는?")
 # 1~마지막번호까지 리스트 만들자
-list_class = list(range(1, last_number + 1))
+list_class = list(range(1, int(last_number) + 1))
 # 무한반복
 while True:
 #   나간 친구 묻자
     exclude_number = input("뺄 번호는?(그냥 enter치면 끝내자)")
-#   리스트에서 빼자
+
     if exclude_number == '':
         break
+#   리스트에서 빼자
     list_class.remove(int(exclude_number))
 # 그냥 enter면 반복 끝내자
-
-
+random.shuffle(list_class)
 # 랜덤으로 섞자
 # 촐력하자
+# print(list_class)
+print('자리\t학생번호')
+for index, n in enumerate(list_class):
+    print(f'{index + 1}\t{n}')
