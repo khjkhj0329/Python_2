@@ -1,6 +1,6 @@
 from baseball_game_engine import make_quiz, check
 answer = make_quiz()
-print(answer)
+# print(answer)
 # 무한 반복
 while True:
 #   숫자 3자리 중복없이 묻자
