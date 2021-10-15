@@ -2,7 +2,7 @@
 import pickle
 from person import Person
 
-if __name__=='__main':
+if __name__ == '__main__':
     번호1 = Person('공도윤', '곰세마리')
     번호4 = Person('김설', 'stay(저스틴비버)')
     절친 = [번호1, 번호4]
