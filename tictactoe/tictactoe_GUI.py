@@ -31,7 +31,7 @@ class TictactoeGUI:
         # set row, col
         self.game_engine.set(row, col)
         # show board
-        self.game_engine.show_board()
+        self.draw_board()
         # set winner
         winner = self.game_engine.set_winner()
         # 승자가 있거나 무승부일 때, 게임오버, 결과 출력하자
@@ -72,7 +72,7 @@ class TictactoeGUI:
         #     col = 2
         # elif 200 <= y < 300:
         #     col = 3
-        row = y // 100 + 1
+        row = y // (self.CANVAS_SIZE // self.game_engine.SIZE) + 1
         col = x // 100 + 1
         return row, col
 
